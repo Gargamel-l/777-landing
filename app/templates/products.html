@@ -1,0 +1,37 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Продукция{% endblock %}
+
+{% block content %}
+    <div class="products-page">
+        <div class="container left-side">
+            <h1>Пиломатериалы</h1>
+            <div class="products">
+                <img src="/static/images/materials.png" />
+                <div>
+                    <h2>Строительные размеры хвойных пород:</h2>
+                    <ul>
+                        <li>50*200*6000</li>
+                        <li>100*100*6000</li>
+                        <li>50*200*6000</li>
+                        <li>50*150*6000</li>
+                        <li>40*150*6000</li>
+                        <li>40*100*6000</li>
+                        <li>50*100*6000</li>
+                        <li>25*150*6000</li>
+                        <li>25*100*6000</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="description">
+                <img src="/static/svg/pencil.svg" />
+                <p>
+                    Также производятся пиломатериалы под размеры заказчика.<br>
+                    Производительность: 1000м3
+                </p>
+            </div>
+            <span class="hint">* За подробной информацией о сроках поставки и ценах просим вас обращаться по указанным контактным данным на сайте.</span>
+        </div>
+        <div class="bg"></div>
+    </div>
+{% endblock %}

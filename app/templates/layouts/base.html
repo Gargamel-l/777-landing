@@ -1,0 +1,40 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}777 Три семерки{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <img src="{{ url_for('static', filename='svg/logo.svg') }}" alt="Логотип компании">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">О компании</a></li>
+                    <li><a href="/products">Продукция</a></li>
+                    <li><a href="/partners">Сотрудничество</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <img src="/static/svg/phone.svg" />
+                <p>+7 (900) 224-38-66<br>9:00-19:00</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; ООО &laquo;777Трисемерки&raquo;, 2024</p>
+        <p><a href="/contacts">Контакты</a></p>
+    </footer>
+</body>
+</html>
