@@ -356,3 +356,112 @@ footer a
 {
     margin-bottom: 4vh;
 }
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+    .container {
+        width: 92%;
+        padding: 0;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 2vh;
+        padding: 2vh;
+    }
+
+    .hero
+    {
+        padding: 10vh 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    main a {
+        padding: 1vh 1.5vh;
+        align-self: center;
+    }
+
+    .partnership img {
+        max-width: 80%;
+    }
+
+    .partnership .text {
+        font-size: 1em;
+        max-width: 90%;
+        word-break: break-all;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 4vh;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products ul
+    {
+        align-content: center
+    }
+
+    .products h2
+    {
+        text-align: center;
+    }
+
+    .products img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .description {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partners {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partners img {
+        width: 80%;
+    }
+
+    .partners p {
+        text-align: center;
+    }
+
+    .contacts h1 {
+        font-size: 1.5em;
+    }
+
+    .contacts p {
+        font-size: 1em;
+        text-align: right;
+        margin-right: 1vh;
+    }
+
+    .hint
+    {
+        text-align: center;
+    }
+}
